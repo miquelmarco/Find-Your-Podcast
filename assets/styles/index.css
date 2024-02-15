@@ -216,10 +216,14 @@ input[type="search"] {
     color: #7a0945;
     font-size: small;
     font-weight: 500;
-    width: 35%;
+    width: 30%;
     border-radius: 0.2rem;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
     padding-left: 0.4rem !important;
     padding-right: 0.4rem !important;
+    /* padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important; */
     transition: 0.2s;
     border: outset 0.5px black !important;
     border-style: solid !important;
