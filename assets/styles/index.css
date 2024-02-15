@@ -109,6 +109,10 @@ footer {
     font-weight: 650;
 }
 
+input[type="search"] {
+    outline: none !important;
+}
+
 /* main edit */
 
 /* carrusel */
