@@ -216,8 +216,10 @@ input[type="search"] {
     color: #7a0945;
     font-size: small;
     font-weight: 500;
-    border-radius: 0.5rem;
-    padding: 0.4rem !important;
+    width: 35%;
+    border-radius: 0.2rem;
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
     transition: 0.2s;
     border: outset 0.5px black !important;
     border-style: solid !important;
