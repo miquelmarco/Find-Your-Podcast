@@ -19,6 +19,9 @@
 }
 
 /* font-family: 'Josefin Sans', sans-serif; */
+.font1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 * {
     padding: 0 !important;
@@ -140,7 +143,7 @@ footer {
     position: absolute !important;
     left: 10vw !important;
     bottom: 15vh !important;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     background-color: #bb114fe3;
     width: 35%;
     color: #20da99;
@@ -150,6 +153,10 @@ footer {
 
 /* podcast cards */
 
+.sectionTitle {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
 .cardSection {
     min-height: 50vh;
     font-family: 'Josefin Sans', sans-serif !important;
@@ -157,7 +164,7 @@ footer {
 
 .podcast-card-container {
     width: 85%;
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .podcast-card {
@@ -165,11 +172,12 @@ footer {
     min-height: 3vh;
     margin: 0.3rem !important;
     transition: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .podcast-card:hover {
-    transform: scale(1.3) !important;
+    transform: scale(1.2);
+    transition: transform 0.3s ease 0.25s !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .cardImg {
@@ -179,10 +187,12 @@ footer {
 .card-title {
     font-weight: 800;
     color: #7a0945;
+    background-color: white;
 }
 
 .orden-des {
     font-size: 0.7rem;
+    background-color: white;
 }
 
 .card-icon {
@@ -198,16 +208,13 @@ footer {
 }
 
 .card-btn {
-    background-color: black;
-    color: #c7e87e;
-    font-weight: 700;
+    background-color: white;
+    color: #7a0945;
+    font-size: small;
+    font-weight: 500;
     border-radius: 0.5rem;
     padding: 0.4rem !important;
     transition: 0.2s;
-}
-
-.card-connections {
-    display: none !important;
 }
 
 .card-btn:hover {
@@ -216,7 +223,13 @@ footer {
     color: #7a0945;
 }
 
+.card-connections {
+    display: none !important;
+}
+
 .card-description {
+    max-height: 4rem !important;
+    overflow-y: auto;
     font-size: 0.7rem;
     font-weight: 500;
     display: none;
@@ -224,8 +237,33 @@ footer {
 
 .podcast-card:hover .card-description {
     display: flex !important;
+    background-color: white !important;
 }
 
 .podcast-card:hover .card-connections {
     display: flex !important;
+    background-color: white !important;
+}
+
+/* podcasters section */
+
+.podcaster-section {
+    width: 100%;
+    min-height: 50vh;
+}
+
+.podcaster-section-interior {
+    width: 85%;
+}
+
+.podcaster-image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.podcaster-individual-container:hover {
+    filter: sepia(100%);
+    transition: 0.5s;
+    cursor: pointer;
 }
