@@ -215,6 +215,8 @@ footer {
     border-radius: 0.5rem;
     padding: 0.4rem !important;
     transition: 0.2s;
+    border: outset 0.5px black !important;
+    border-style: solid !important;
 }
 
 .card-btn:hover {
@@ -264,6 +266,6 @@ footer {
 
 .podcaster-individual-container:hover {
     filter: sepia(100%);
-    transition: 0.5s;
+    transition: all 0.5s;
     cursor: pointer;
 }
