@@ -147,7 +147,6 @@ input[type="search"] {
     position: absolute !important;
     left: 10vw !important;
     bottom: 15vh !important;
-    /* z-index: 1 !important; */
     background-color: #bb114fe3;
     width: 35%;
     color: #20da99;
@@ -235,6 +234,7 @@ input[type="search"] {
 
 .card-connections {
     display: none !important;
+    width: 100%;
 }
 
 .card-description {
@@ -296,4 +296,79 @@ input[type="search"] {
 .pointer:hover {
     color: blue !important;
     transition: 0.5s;
+}
+
+/* querys edit */
+
+@media only screen and (max-width: 1300px) {
+    .card-btn {
+        width: 50%;
+    }
+
+    .podcast-card-container {
+        width: 100% !important;
+    }
+
+    .sectionTitle {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .podcast-card-container {
+        min-height: 130vh !important;
+    }
+
+    .podcast-card {
+        width: 35%;
+    }
+
+    .podcast-card:hover {
+        transform: scale(1);
+        transition: transform 0.3s ease 0.25s !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .card-connections {
+        display: flex !important;
+    }
+
+    .card-description {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card-description {
+        max-height: 6rem !important;
+    }
+
+    .podcast-card {
+        width: 45%;
+        height: 37%;
+    }
+
+    .podcast-card-container {
+        min-height: 100vh !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .podcast-card {
+        width: 80%;
+        /* height: 37%; */
+    }
+
+    .podcast-card-container {
+        min-height: 180vh !important;
+    }
+
+    .cardSection {
+        min-height: 280vh !important;
+    }
+
+    .podcaster-section {
+        width: 100%;
+        min-height: 250vh;
+    }
 }
