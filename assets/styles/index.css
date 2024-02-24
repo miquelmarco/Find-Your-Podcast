@@ -51,7 +51,7 @@ footer {
 /* header edit */
 
 .headerLogo {
-    height: 100%;
+    height: 10vh;
 }
 
 .nav-link {
@@ -197,16 +197,16 @@ input[type="search"] {
 }
 
 .podcast-card:hover .card-description {
+    display: flex !important;
     transition: transform 0.3s ease 0.25s !important;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    display: flex !important;
     background-color: white !important;
 }
 
 .podcast-card:hover .card-connections {
+    display: flex !important;
     transition: transform 0.3s ease 0.25s !important;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    display: flex !important;
     background-color: white !important;
 }
 
@@ -304,78 +304,13 @@ input[type="search"] {
 
 /* querys edit */
 
-/* @media only screen and (max-width: 1300px) {
-    .card-btn {
-        width: 50%;
+@media only screen and (max-width: 940px) {
+    header {
+        min-height: 15vh !important;
+        flex-wrap: wrap;
     }
 
-    .podcast-card-container {
-        width: 100% !important;
-    }
-
-    .sectionTitle {
-        width: 100% !important;
-    }
+    /* .item-container {
+        flex-direction: column;
+    } */
 }
-
-@media only screen and (max-width: 900px) {
-    .podcast-card-container {
-        min-height: 130vh !important;
-    }
-
-    .podcast-card {
-        width: 35%;
-    }
-
-    .podcast-card:hover {
-        transform: scale(1);
-        transition: transform 0.3s ease 0.25s !important;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    }
-
-    .card-connections {
-        display: flex !important;
-    }
-
-    .card-description {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .card-description {
-        max-height: 6rem !important;
-    }
-
-    .podcast-card {
-        width: 45%;
-        height: 37%;
-    }
-
-    .podcast-card-container {
-        min-height: 150vh !important;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .podcast-card {
-        width: 80%;
-    }
-
-    .podcast-card-container {
-        min-height: 180vh !important;
-    }
-
-    .cardSection {
-        min-height: 280vh !important;
-    }
-
-    .podcaster-section {
-        width: 100%;
-        min-height: 250vh;
-    }
-
-    .card-description {
-        max-height: 7rem !important;
-    }
-} */
