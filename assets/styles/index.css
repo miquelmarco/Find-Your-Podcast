@@ -425,3 +425,20 @@ input[type="search"] {
         background-color: white !important;
     }
 }
+
+/* footer querys */
+
+@media only screen and (max-width: 990px) {
+    footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .footerTextCon {
+        flex-direction: column;
+        text-align: center;
+    }
+}
