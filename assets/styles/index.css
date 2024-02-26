@@ -27,7 +27,7 @@
     padding: 0 !important;
     margin: 0 !important;
     box-sizing: border-box;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 .layout {
@@ -36,7 +36,7 @@
 }
 
 header {
-    height: 10vh;
+    min-height: 10vh;
     font-family: 'Josefin Sans', sans-serif !important;
 }
 
@@ -101,7 +101,7 @@ footer {
 
 .logBtn {
     background-color: #20da99;
-    height: 100%;
+    height: 10vh;
     width: 7rem;
     margin-right: 2rem !important;
     border: none;
@@ -167,12 +167,12 @@ input[type="search"] {
 
 .podcast-card-container {
     width: 85%;
-    min-height: 50vh;
+    height: 30rem;
 }
 
 .podcast-card {
     width: 20%;
-    min-height: 3vh;
+    min-height: 20rem !important;
     margin: 0.3rem !important;
     transition: 0.3s;
 }
@@ -192,7 +192,7 @@ input[type="search"] {
 
 .podcast-card:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease 0.25s !important;
+    transition: transform 0.5s ease 0.25s !important;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
@@ -304,13 +304,124 @@ input[type="search"] {
 
 /* querys edit */
 
+/* header querys */
+
 @media only screen and (max-width: 940px) {
     header {
         min-height: 15vh !important;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
-    /* .item-container {
+    .headerLogo {
+        margin: 0.3rem !important;
+    }
+
+    .logBtn {
+        height: 3rem;
+        width: 7rem;
+        margin-right: 0rem !important;
+        border: none;
+        color: #7a0945;
+        font-weight: 650;
+        margin: 0.3rem !important;
+    }
+
+    .item-container {
         flex-direction: column;
-    } */
+        width: 30%;
+        text-align: center;
+    }
+
+    /* carrusel querys */
+
+    .carousel-inner {
+        height: 50vh !important;
+    }
+
+    .carImg {
+        height: 50vh !important;
+    }
+
+    .carousel-text {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item-container {
+        width: 45%;
+    }
+
+    .carousel-inner {
+        height: 30vh !important;
+    }
+
+    .carImg {
+        height: 30vh !important;
+    }
+
+    .carousel-text {
+        width: 65%;
+        margin: 1rem !important;
+        bottom: 3vh !important;
+        background-color: #bb114fc9;
+        font-weight: bolder;
+        font-size: 0.8rem !important;
+    }
+
+    .carTextTitle {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .item-container {
+        width: 75%;
+    }
+}
+
+/* cards querys */
+
+@media only screen and (max-width: 990px) {
+    .podcast-card-container {
+        width: 100%;
+        height: 60rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .podcast-card {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .podcast-card-container {
+        width: 100%;
+        height: 110rem;
+    }
+
+    .podcast-card {
+        width: 80%;
+    }
+
+    .podcast-card:hover {
+        transform: scale(1.02);
+        transition: transform 0.1s ease 0.25s !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    
+    .podcast-card:hover .card-description {
+        display: flex !important;
+        transition: transform 0.1s ease 0.25s !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background-color: white !important;
+    }
+    
+    .podcast-card:hover .card-connections {
+        display: flex !important;
+        transition: transform 0.1s ease 0.25s !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background-color: white !important;
+    }
 }
