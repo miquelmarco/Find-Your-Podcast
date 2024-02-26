@@ -335,11 +335,11 @@ input[type="search"] {
     /* carrusel querys */
 
     .carousel-inner {
-        height: 50vh !important;
+        height: 40vh !important;
     }
 
     .carImg {
-        height: 50vh !important;
+        height: 40vh !important;
     }
 
     .carousel-text {
@@ -387,20 +387,31 @@ input[type="search"] {
         width: 100%;
         height: 60rem;
     }
-}
 
-@media only screen and (max-width: 800px) {
     .podcast-card {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
     .podcast-card-container {
         width: 100%;
-        height: 110rem;
+        height: 160rem !important;
     }
 
+    .podcast-card {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .podcast-card-container {
+        width: 100%;
+        height: 130rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .podcast-card {
         width: 80%;
     }
@@ -410,19 +421,12 @@ input[type="search"] {
         transition: transform 0.1s ease 0.25s !important;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
-    
-    .podcast-card:hover .card-description {
-        display: flex !important;
-        transition: transform 0.1s ease 0.25s !important;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        background-color: white !important;
-    }
-    
-    .podcast-card:hover .card-connections {
-        display: flex !important;
-        transition: transform 0.1s ease 0.25s !important;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        background-color: white !important;
+}
+
+@media only screen and (max-width: 380px) {
+    .podcast-card-container {
+        width: 100%;
+        height: 100rem !important;
     }
 }
 
